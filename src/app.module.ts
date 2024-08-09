@@ -4,9 +4,10 @@ import { AuthModule } from './auth/auth.module';
 import { Module } from '@nestjs/common';
 import { PassportModule } from '@nestjs/passport';
 import { UsersModule } from './users/users.module';
+import { PostsModule } from './posts/posts.module';
 
 @Module({
-  imports: [AuthModule, UsersModule, PassportModule],
+  imports: [AuthModule, UsersModule, PassportModule, PostsModule],
   controllers: [AppController],
   providers: [AppService],
 })
